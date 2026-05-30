@@ -21,6 +21,6 @@ class ArraySumAndAverage {
         System.out.println("Sum = " + sum);
         System.out.println("Average = " + average);
 
-        sc.close(); // ✅ moved inside main method
+        sc.close(); 
     }
 }
