@@ -1,0 +1,378 @@
+/* =========================================================================
+   Step 2: CSS Syntax and Comments
+   ========================================================================= */
+
+/* 
+ * Style for main CTA button 
+ * This adds a nice background and text color to our register button.
+ */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* =========================================================================
+   Step 3: Selectors Playground
+   ========================================================================= */
+
+/* Universal selector to reset margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element selector to style all <h2> */
+h2 {
+    color: #005f99;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* ID selector for the banner */
+#mainHeader {
+    background-color: #add8e6;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #005f99;
+}
+
+/* Class selector for event containers */
+.eventCard {
+    /* Step 8: Box Model - Add border, padding, and margin */
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Grouping selector for h3 and p to style them together */
+h3, p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* =========================================================================
+   Step 4: Color & Background Styling
+   ========================================================================= */
+
+/* HEX and RGBA for setting text and background colors */
+.highlight {
+    background-color: rgba(255, 255, 0, 0.5); /* RGBA background */
+    color: #333333; /* HEX text color */
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Apply gradients to section headers */
+section h2 {
+    background: linear-gradient(to right, #005f99, #66b2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: none; /* Override previous h2 border */
+}
+
+/* =========================================================================
+   Step 5: Typography: Fonts and Text
+   ========================================================================= */
+
+/* Use font properties in different sections */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fallback fonts included */
+    font-size: 16px;
+}
+
+#mainHeader p {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Descriptions styling */
+.eventCard p {
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+/* =========================================================================
+   Step 6: Link and List Styling
+   ========================================================================= */
+
+/* Style links with pseudo-classes */
+a:link {
+    color: #005f99;
+    text-decoration: none;
+}
+a:visited {
+    color: #551a8b;
+}
+a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+a:active {
+    color: #ff0000;
+}
+
+/* Nav menu list styling */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    list-style-position: inside;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Add padding and margin to list items */
+nav ul li {
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: white;
+}
+
+/* =========================================================================
+   Step 7: Table Styling
+   ========================================================================= */
+
+/* Format tables using CSS */
+.admin-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Use border-collapse: collapse */
+    text-align: center; /* text-align: center */
+    font-family: Arial, sans-serif;
+}
+
+/* Style table, th, and td with borders, padding, and background color */
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.admin-table th {
+    background-color: #005f99;
+    color: white;
+}
+
+.admin-table td {
+    background-color: #f9f9f9;
+}
+
+/* Add zebra striping to rows using nth-child(even) */
+.admin-table tr:nth-child(even) td {
+    background-color: #e6f2ff;
+}
+
+/* =========================================================================
+   Step 8: Box Model & Layout Control (Continued)
+   ========================================================================= */
+
+/* Add outline to highlight selected fields in a form */
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #005f99;
+    outline-offset: 2px;
+}
+
+/* Compare visibility: hidden vs. display: none */
+.hidden-visibility {
+    visibility: hidden; /* Element takes up space but is invisible */
+}
+
+.hidden-display {
+    display: none; /* Element is completely removed from the layout flow */
+}
+
+/* =========================================================================
+   Step 9: Multiple Columns in Text
+   ========================================================================= */
+
+/* Create a news article section with multi-column layout */
+.news-article {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    margin: 20px;
+    text-align: justify;
+}
+
+/* =========================================================================
+   Step 10: Responsive Web Design with Media Queries
+   ========================================================================= */
+
+/* Use %, vw, vh for flexible layouts */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 95vw;
+}
+
+.eventCard {
+    width: 30%; /* Flexible layout percentage */
+    min-width: 250px;
+    min-height: 25vh;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #555;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img.enlarged {
+    transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Stack navigation links vertically instead of horizontally */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Reduce image sizes and font sizes */
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .eventCard {
+        width: 80%; /* Takes up more width on smaller screens */
+    }
+
+    .news-article {
+        column-count: 1; /* Drop to single column on mobile */
+    }
+}
+
+/* Additional layout styles for general tags */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+}
+/* Premium Footer Styling */
+.site-footer {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    color: #e2e8f0;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+    font-family: 'Roboto', sans-serif;
+    border-top: 4px solid #4facfe;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #00f2fe;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    color: #a0aec0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.footer-links, .footer-socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li, .footer-socials li {
+    margin-bottom: 12px;
+}
+
+.footer-links a, .footer-socials a {
+    color: #a0aec0 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+    color: #00f2fe !important;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #718096;
+    font-size: 0.85rem;
+}
