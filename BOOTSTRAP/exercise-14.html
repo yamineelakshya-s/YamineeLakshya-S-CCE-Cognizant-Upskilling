@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<!-- main container for my layout -->
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mt-2 mb-4" style="color: #0d9488;">Display and Visibility</h2>
+<p class="text-secondary mt-2 mb-3"><i>Working on this layout:</i> responsive display toggling</p>
+<div class="alert alert-info border-info border-start border-4 d-none d-md-flex align-items-center mb-4 shadow-sm">
+    <i class="bi bi-info-circle-fill fs-4 me-3"></i> <strong>Tablet & Desktop Only:</strong> Hidden on mobile using d-none.
+</div>
+<div class="row">
+    <div class="col-md-4 d-none d-md-block"><div class="bg-light p-4 border rounded h-100 shadow-sm fw-bold text-center d-flex align-items-center justify-content-center">Sidebar (Visible MD+)</div></div>
+    <div class="col-12 col-md-8"><div class="p-5 border border-dashed rounded h-100 d-flex align-items-center justify-content-center text-center"><p class="text-muted mb-0">Main Viewport. Resize browser to see sidebar disappear.</p></div></div>
+</div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

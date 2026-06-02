@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<!-- my solution for the lab -->
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mt-2 mb-4" style="color: #0d9488;">Alignment and Reordering</h2>
+<p class="text-secondary mt-2 mb-3"><i>Working on this layout:</i> centering content inside a row</p>
+<div class="row justify-content-center align-items-center mb-5 rounded" style="height: 180px; background-color: #f1f5f9;">
+    <div class="col-8 col-md-6"><div class="grid-box mb-0 border-primary shadow-sm">Centered Content</div></div>
+</div>
+<p class="text-secondary mt-2 mb-3"><i>Here's my attempt at this part:</i> reorder columns on different screen sizes</p>
+<div class="row text-center">
+    <div class="col-md-6 order-md-2 mb-3 mb-md-0"><div class="p-4 bg-warning text-dark rounded shadow-sm">First in HTML (Displays Second on MD+)</div></div>
+    <div class="col-md-6 order-md-1"><div class="p-4 bg-info text-white rounded shadow-sm">Second in HTML (Displays First on MD+)</div></div>
+</div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<!-- need to remember to check responsive view -->
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mb-4 text-primary" style="border-bottom: 2px solid #ccc; padding-bottom: 10px;">Responsive Flexbox Utilities</h2>
+<p class="text-secondary mt-2 mb-3"><i>Task:</i> create a navbar using flex-column and flex-md-row</p>    
+<div class="d-flex flex-column flex-md-row bg-light p-4 rounded mb-5 gap-3 border shadow-sm">
+    <div class="p-3 bg-secondary text-white rounded flex-fill text-center">Flex Item 1</div>
+    <div class="p-3 bg-secondary text-white rounded flex-fill text-center">Flex Item 2</div>
+</div>
+<p class="text-secondary mt-2 mb-3"><i>What I did here:</i> use justify-content-between and align-items-center in a card</p>
+<div class="card shadow-sm"><div class="card-body bg-dark text-white rounded d-flex justify-content-between align-items-center p-4">
+    <h5 class="mb-0 fw-bold">Flexbox Header</h5><button class="btn btn-light rounded-pill px-4">Action</button>
+</div></div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

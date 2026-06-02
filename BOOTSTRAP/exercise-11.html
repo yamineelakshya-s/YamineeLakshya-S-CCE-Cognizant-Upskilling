@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<!-- starting layout here -->
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mt-2 mb-4" style="color: #0d9488;">Cards and Media Objects</h2>
+<div class="row align-items-stretch"><div class="col-md-5 mb-4 mb-md-0">
+    <p class="text-secondary mt-2 mb-3"><i>Just finishing up this section:</i> profile card</p>
+    <div class="card text-center shadow border-0 overflow-hidden">
+        <div class="bg-primary" style="height: 80px;"></div>
+        <div class="card-body position-relative pt-0">
+            <img src="https://ui-avatars.com/api/?name=Dhanusri+S&background=0d9488&color=fff" class="rounded-circle border border-4 border-white shadow-sm mb-3" style="margin-top: -40px; width: 80px;" alt="Profile Avatar">
+            <h5 class="card-title fw-bold">Dhanusri S</h5>
+            <button class="btn btn-primary rounded-pill px-4 btn-sm mt-2">Follow</button>
+        </div>
+    </div>
+</div><div class="col-md-7">
+    <p class="text-secondary mt-2 mb-3"><i>Here's my attempt at this part:</i> media object layout</p>
+    <div class="card shadow-sm border-0 h-100"><div class="card-body p-4">
+        <div class="d-flex align-items-start p-3 bg-light rounded border">
+            <img src="https://ui-avatars.com/api/?name=User" class="me-3 rounded shadow-sm" style="width: 64px;">
+            <div><h6 class="mt-0 fw-bold mb-1">Flexbox Media Object</h6><p class="text-muted small mb-0">Recreating the old media object using Bootstrap 5 flexbox utilities.</p></div>
+        </div>
+    </div></div>
+</div></div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

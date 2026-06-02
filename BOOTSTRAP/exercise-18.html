@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mt-2 mb-4" style="color: #0d9488;">JavaScript Plugins</h2>
+<div class="row"><div class="col-md-5 mb-4 mb-md-0">
+    <p class="text-secondary mt-2 mb-3"><i>Goal:</i> modal Popup</p>
+    <div class="p-4 bg-light border rounded h-100 d-flex align-items-center justify-content-center">
+        <button type="button" class="btn btn-primary rounded-pill px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#demoModal">Launch Modal</button>
+    </div>
+    <div class="modal fade" id="demoModal"><div class="modal-dialog modal-dialog-centered"><div class="modal-content shadow-lg rounded-4 border-0">
+        <div class="modal-header bg-light"><h1 class="modal-title fs-5 fw-bold">Action Required</h1><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body p-4 text-muted">This modal dialog satisfies the requirements for Exercise 18.1.</div>
+        <div class="modal-footer border-top-0"><button type="button" class="btn btn-light rounded-pill" data-bs-dismiss="modal">Cancel</button><button type="button" class="btn btn-primary rounded-pill">Confirm</button></div>
+    </div></div></div>
+</div><div class="col-md-7">
+    <p class="text-secondary mt-2 mb-3"><i>Task:</i> collapsible Accordion</p>
+    <div class="accordion shadow-sm rounded border" id="faqAccordion">
+        <div class="accordion-item border-0 border-bottom"><h2 class="accordion-header"><button class="accordion-button fw-semibold" data-bs-toggle="collapse" data-bs-target="#c1">What is Bootstrap 5?</button></h2><div id="c1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted small">It is a powerful frontend toolkit.</div></div></div>
+        <div class="accordion-item border-0"><h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse" data-bs-target="#c2">Does it require jQuery?</button></h2><div id="c2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted small">No, it uses vanilla JS!</div></div></div>
+    </div>
+</div></div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

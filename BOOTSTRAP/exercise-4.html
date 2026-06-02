@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<!-- need to remember to check responsive view -->
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mt-2 mb-4" style="color: #0d9488;">Column Layouts & Grid Classes</h2>
+<p class="text-secondary mt-2 mb-3"><i>My setup for this:</i> two-column layout with sidebar (col-md-3) and content area (col-md-9)</p>
+<div class="row mb-5 align-items-stretch">
+    <aside class="col-md-3 mb-3 mb-md-0"><div class="grid-box bg-light h-100 d-flex align-items-center justify-content-center">Sidebar (col-md-3)</div></aside>
+    <main class="col-md-9"><div class="grid-box bg-white border-primary border h-100 d-flex align-items-center justify-content-center">Main Content (col-md-9)</div></main>
+</div>
+<p class="text-secondary mt-2 mb-3"><i>Just finishing up this section:</i> four-column layout with equal width (col-sm-3)</p>
+<div class="row">
+    <div class="col-sm-3"><div class="grid-box">Col 1</div></div>
+    <div class="col-sm-3"><div class="grid-box">Col 2</div></div>
+    <div class="col-sm-3"><div class="grid-box">Col 3</div></div>
+    <div class="col-sm-3"><div class="grid-box">Col 4</div></div>
+</div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

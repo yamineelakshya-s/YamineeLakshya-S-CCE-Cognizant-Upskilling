@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<!-- adding some spacing so it doesn't look squished -->
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mt-2 mb-4" style="color: #0d9488;">Forms</h2>
+<div class="row">
+    <div class="col-md-6 mb-4 mb-md-0">
+        <div class="card shadow-sm h-100"><div class="card-body p-4">
+        <h5 class="fw-bold mb-4">Registration Form</h5>
+        <form>
+            <div class="mb-3"><label class="form-label fw-medium">Username</label>
+            <div class="input-group"><span class="input-group-text bg-light">@</span><input type="text" class="form-control"></div></div>
+            <div class="mb-4"><label class="form-label fw-medium">Email Address</label><input type="email" class="form-control"></div>
+            <button type="button" class="btn btn-primary w-100 py-2">Register</button>
+        </form>
+        </div></div>
+    </div>
+    <div class="col-md-6">
+        <div class="card shadow-sm h-100 bg-light border-0"><div class="card-body p-4">
+        <h5 class="fw-bold mb-4 text-center">Floating Labels</h5>
+        <form>
+            <div class="form-floating mb-3 shadow-sm"><input type="email" class="form-control border-0" id="fEmail" placeholder="name@example.com"><label for="fEmail">Email address</label></div>
+            <div class="form-floating mb-4 shadow-sm"><input type="password" class="form-control border-0" id="fPass" placeholder="Password"><label for="fPass">Password</label></div>
+            <button type="button" class="btn btn-dark w-100 py-3 rounded-pill fw-bold">Login</button>
+        </form>
+        </div></div>
+    </div>
+</div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

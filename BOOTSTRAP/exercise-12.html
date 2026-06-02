@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      padding-bottom: 5rem; 
+      font-family: sans-serif; 
+      padding-top: 2rem; 
+      background-color: #fcfcfc; 
+    }
+    .grid-box { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 1rem; text-align: center; margin-bottom: 1rem; border-radius: 0.5rem; }
+    
+  </style>
+</head>
+<body>
+
+<!-- this part was tricky but it works now -->
+<main class="container bg-white p-5 rounded shadow-sm border">
+    <h2 class="mt-2 mb-4" style="color: #0d9488;">Spacing Utilities</h2>
+<p class="text-secondary mt-2 mb-3"><i>Notes on this:</i> apply margin, padding, build pricing section</p>
+<div class="row justify-content-center"><div class="col-md-6">
+    <div class="card m-4 p-2 py-5 border-primary border-2 shadow text-center rounded-4">
+        <div class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 mb-3 mx-auto fw-bold" style="width: max-content;">Pro Plan</div>
+        <h3 class="card-title fw-bold">Professional</h3>
+        <h4 class="display-5 fw-bold my-4">$29<span class="text-muted fs-5 fw-normal">/mo</span></h4>
+        <button class="btn btn-primary btn-lg w-75 rounded-pill shadow-sm">Upgrade Now</button>
+    </div>
+</div></div>
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
